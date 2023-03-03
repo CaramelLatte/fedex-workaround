@@ -10,7 +10,6 @@ def reset_eof_of_pdf_return_stream(pdf_stream_in:list):
             print(f'EOF found at line position {-i} = actual {actual_line}, with value {x}')
             break
 
-
     # return the list up to that point
     return pdf_stream_in[:actual_line]
 
