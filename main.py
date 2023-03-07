@@ -2,6 +2,7 @@ from pypdf import PdfReader, PdfWriter
 import os
 from time import sleep
 
+#Fedex generated shipping label PDFs need data trimmed from the end of the file in order to find the end-of-file statement, required for handling
 def reset_eof_of_pdf_return_stream(pdf_stream_in:list):
     # find the line position of the EOF
     for i, x in enumerate(txt[::-1]):
@@ -32,7 +33,6 @@ while True:
 
             #load new pdf
             fixed_pdf = PdfReader(item)
-            pages = len(fixed_pdf.pages)
             writer = PdfWriter()
 
             #rotate 90 degrees
