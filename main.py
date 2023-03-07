@@ -23,7 +23,6 @@ while True:
             with open(item, 'rb') as p:
                 txt = (p.readlines())
 
-
             # get the new list terminating correctly
             txtx = reset_eof_of_pdf_return_stream(txt)
 
@@ -55,6 +54,8 @@ while True:
 
             #clean folder and print output
             os.remove(item)
+            list.remove(item)
             os.system('cmd /c "PdftoPrinter.exe output.pdf "ZDesigner ZT411-300dpi ZPL""')
             os.remove('output.pdf')
-        sleep(3)
+            print("Printing corrected label")
+    sleep(3)
