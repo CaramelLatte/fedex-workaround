@@ -58,4 +58,5 @@ while True:
             os.system('cmd /c "PdftoPrinter.exe output.pdf "ZDesigner ZT411-300dpi ZPL""')
             os.remove('output.pdf')
             print("Printing corrected label")
+            sleep(2)
     sleep(3)
