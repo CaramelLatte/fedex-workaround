@@ -1,4 +1,9 @@
 # fedex-workaround
+
+
+TOOL NO LONGER NEEDED, CODE IS KEPT ONLY AS A RECORD
+
+
 Beta version of a tool to automatically format a fedex paper shipment document to fit a 4x6 label profile, and automatically print.
 
 To use:
